@@ -615,3 +615,27 @@ footer {
     opacity: 1;
     visibility: visible;
 }
+
+/* ===========================================
+   VIDEOSセクション
+   ========================================== */
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    .video-container iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
