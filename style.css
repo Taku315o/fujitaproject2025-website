@@ -526,7 +526,7 @@ footer {
 .works-cards {
   display: flex;
   justify-content: flex-start;
-  gap: 2.5rem; /* カード間の隙間 */
+  gap: 3.5rem; /* カード間の隙間 */
   flex-wrap: wrap;
 }
 
