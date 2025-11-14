@@ -254,32 +254,47 @@ footer {
 
 /* レスポンシブ対応 (簡易的) */
 @media (max-width: 768px) {
+    header {
+        padding: 0.5rem 0; /* ヘッダーのパディングを削減 */
+    }
+
     header .container {
         flex-direction: column;
         align-items: center; /* ロゴなどを中央揃えに */
     }
 
+    .logo {
+        font-size: 1.3rem; /* ロゴサイズを小さく */
+    }
+
     nav {
-        margin-top: 1rem;
+        margin-top: 0.5rem; /* 上のマージンを削減 */
         width: 100%;
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row; /* 横並びに変更 */
+        flex-wrap: wrap; /* 折り返しを許可 */
+        justify-content: center; /* 中央揃え */
         width: 100%;
+        gap: 0.3rem 0.8rem; /* 縦横の間隔を調整 */
     }
 
     nav ul li {
-        margin: 0.5rem 0;
-        text-align: left;
+        margin: 0; /* マージンをリセット */
+        text-align: center;
     }
 
     nav ul li a {
         display: block; /* スマホ表示でリンクエリアを広げる */
+        font-size: 0.85rem; /* フォントサイズを小さく */
+        padding: 0.3rem 0; /* パディングを削減 */
     }
 
     .contact-btn {
-        margin-top: 1rem;
+        margin-top: 0.5rem; /* 上のマージンを削減 */
+        padding: 0.4rem 0.8rem; /* ボタンサイズを小さく */
+        font-size: 0.85rem; /* フォントサイズを小さく */
         align-self: center; /* ボタンも中央揃えに */
     }
 
